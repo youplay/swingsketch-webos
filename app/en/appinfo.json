@@ -1,0 +1,16 @@
+{
+  "id": "org.youplay.swingsketch.en",
+  "version": "1.0.0",
+  "vendor": "Youplay",
+  "type": "web",
+  "main": "index.html",
+  "title": "SwingSketch EN",
+  "appDescription": "Offline drawing board: pen, eraser, undo, redo and a local draft",
+  "icon": "icon.png",
+  "largeIcon": "largeIcon.png",
+  "resolution": "1920x1080",
+  "supportTouchMode": "full",
+  "supportPortraitMode": true,
+  "closeOnRotation": false,
+  "requiredACG": []
+}

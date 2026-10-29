@@ -1,0 +1,16 @@
+{
+  "id": "org.youplay.swingsketch",
+  "version": "1.0.0",
+  "vendor": "Youplay",
+  "type": "web",
+  "main": "index.html",
+  "title": "輕鬆畫畫",
+  "appDescription": "離線觸控畫板：畫筆、橡皮擦、復原與草稿",
+  "icon": "icon.png",
+  "largeIcon": "largeIcon.png",
+  "resolution": "1920x1080",
+  "supportTouchMode": "full",
+  "supportPortraitMode": true,
+  "closeOnRotation": false,
+  "requiredACG": []
+}

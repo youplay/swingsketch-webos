@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<title>輕鬆畫畫</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div><strong>輕鬆畫畫</strong><span class="subtitle">把靈感畫下來</span></div><span id="status" role="status">準備好了</span></header>
+<nav aria-label="畫畫工具">
+<div class="group"><button id="pen" class="active" aria-pressed="true">✎ 畫筆</button><button id="eraser" aria-pressed="false">橡皮擦</button></div>
+<div class="group colors" aria-label="顏色">
+<button class="color selected" data-color="#243447" style="--swatch:#243447" aria-label="墨黑" aria-pressed="true"></button>
+<button class="color" data-color="#ed5c66" style="--swatch:#ed5c66" aria-label="珊瑚紅" aria-pressed="false"></button>
+<button class="color" data-color="#ee983d" style="--swatch:#ee983d" aria-label="橘色" aria-pressed="false"></button>
+<button class="color" data-color="#e4c43b" style="--swatch:#e4c43b" aria-label="黃色" aria-pressed="false"></button>
+<button class="color" data-color="#409c77" style="--swatch:#409c77" aria-label="綠色" aria-pressed="false"></button>
+<button class="color" data-color="#3f85db" style="--swatch:#3f85db" aria-label="藍色" aria-pressed="false"></button>
+<button class="color" data-color="#9164cf" style="--swatch:#9164cf" aria-label="紫色" aria-pressed="false"></button>
+<button class="color" data-color="#dc80b6" style="--swatch:#dc80b6" aria-label="粉紅色" aria-pressed="false"></button>
+</div>
+<div class="group"><button data-size="4">細</button><button data-size="10" class="active">中</button><button data-size="24">粗</button></div>
+<div class="group"><button id="undo" disabled>↶ 復原</button><button id="redo" disabled>↷ 重做</button><button id="clear">清空</button></div>
+</nav>
+<main><div id="paper"><canvas id="board" width="1600" height="900" aria-label="畫布，使用手指或滑鼠拖曳畫畫"></canvas></div></main>
+<footer><span>一根手指就能畫 · 遙控器可選工具，畫線請用觸控或滑鼠</span><span>離線畫板 · 1.0</span></footer>
+<div id="confirm" class="overlay" hidden role="dialog" aria-modal="true" aria-labelledby="confirm-title"><section><h2 id="confirm-title">清空這張畫？</h2><p>清空後仍可以按「復原」找回。</p><div class="group"><button id="cancelClear">繼續畫</button><button id="confirmClear">清空畫布</button></div></section></div>
+<script src="app.js"></script>
+</body></html>
